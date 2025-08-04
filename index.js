@@ -66,7 +66,8 @@ app.post("/api/chat", async (req, res) => {
       model: determineGeminiModel("pro"),
       contents: payload,
       config: {
-        systemInstruction: "Anda adalah chatter terhandal.",
+        systemInstruction:
+          "Anda adalah asisten AI yang cerdas, andal, dan selalu siap memberikan informasi terbaik.",
       },
     });
 
